@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infor WFM Consulting Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            margin: -50px auto 50px;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .section {
+            padding: 60px 50px;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .contact {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item strong {
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 40px 30px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">WFM Solutions</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Infor WFM Consulting</h1>
+                <p class="subtitle">Expert consulting services for Infor Workforce Management solutions. Optimize your workforce operations with specialized expertise.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="content">
+                <section class="section">
+                    <h2>What I Do</h2>
+                    <p>I provide specialized consulting services for Infor WFM (Workforce Management), helping organizations maximize their investment in this powerful enterprise software. With deep expertise in workforce optimization, I deliver tailored solutions that streamline operations and improve productivity.</p>
+                    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <h3>Implementation</h3>
+                            <p>Complete Infor WFM system setup and configuration tailored to your business needs.</p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Optimization</h3>
+                            <p>Fine-tune existing systems for maximum efficiency and performance.</p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Training</h3>
+                            <p>Comprehensive user training and knowledge transfer to your team.</p>
+                        </div>
+                        <div class="service-card">
+                            <h3>Support</h3>
+                            <p>Ongoing technical support and system maintenance services.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section contact" id="contact">
+                    <h2>Let's Work Together</h2>
+                    <p>Ready to optimize your workforce management? I'm here to help you get the most out of your Infor WFM investment.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <span>info@spatialconsulting.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone</strong>
+                            <span>(954) 242-4507</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <span>Houston, Texas</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WFM Solutions. Infor WFM Consulting Services.</p>
+        </div>
+    </footer>
+</body>
+</html>
